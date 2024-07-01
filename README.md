@@ -13,3 +13,4 @@ pip install requests
 
 pip install lxml
 
+flask run

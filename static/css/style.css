@@ -1,0 +1,49 @@
+body 
+{
+
+    background-color: rgb(17, 17, 17);
+}
+h1,h2
+{
+    
+    font-family: 'Aclonica';font-size: 50px;
+    color: antiquewhite;
+
+}
+label
+{
+    color: antiquewhite;
+    font-family: 'Aclonica';font-size: 25px;
+}
+#content
+{
+    
+    color: antiquewhite;
+
+}
+input
+{
+
+    border-style: dotted;
+
+  cursor: not-allowed;
+  color: #000000;
+  font-weight: bold;
+  
+  height: 20px;
+}
+select
+{
+
+    border-style: dotted;
+    height: 20px;
+    cursor: not-allowed;
+    color: #000000;
+    font-weight: bold;
+}
+#butt
+{
+    height: 25px;
+    width:100px;
+
+}

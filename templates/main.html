@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+</head>
+<body>
+    <center> <h1>Site Scraper</h1> </center>
+    <form method="POST">
+        <label for="search"> URL :</label>
+        <input type="text" name="search" value="{{ search_term }}">
+        <br>
+        <label for="options"> TAG :</label>
+        <select name="options" id="options">
+            <option value="full site">full site</option>
+            <option value="div">div</option>
+            <option value="h1">h1</option>
+            <option value="img">img</option>
+            <option value="a">a</option>
+            <option value="p">p</option>
+            <option value="ul">ul</option>
+            <option value="ol">ol</option>
+            <option value="li">li</option>
+            <option value="table">table</option>
+            <option value="tr">tr</option>
+            <option value="th">th</option>
+            <option value="td">td</option>
+            <option value="span">span</option>
+            <option value="meta">meta</option>
+            <option value="form">form</option>
+            <option value="input">input</option>
+            <option value="button">button</option>
+        </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input id="butt" type="submit" value="Scrape">
+    </form>
+    {% if html_content %}
+        <h2>Search Results :</h2>
+         
+        <div id="content">{{ html_content }}</div>
+    {% endif %}
+    {%block body%}
+
+    {%endblock%}
+</body>
+</html>
